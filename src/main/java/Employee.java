@@ -9,7 +9,7 @@ public class Employee {
         ID = counter;
     }
 
-    public int getUniqueId() {
+    public int getUniqueID() {
         return ID;
     }
 }

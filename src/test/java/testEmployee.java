@@ -2,6 +2,8 @@ import org.junit.jupiter.api.*;
 
 public class testEmployee {
     Employee testObject1;
+    Employee testObject2;
+    Employee testObject3;
 
 
     @BeforeAll
@@ -21,6 +23,8 @@ public class testEmployee {
         System.out.println("Test start");
 
         testObject1 = new Employee("Marcus", "Davidsson", 33, 30500.00);
+        testObject2 = new Employee("Jakob", "Nilsson", 23, 30500.00);
+        testObject3 = new Employee("Anki", "Phan", 24, 30500.00);
 
     }
     @Test
@@ -28,12 +32,29 @@ public class testEmployee {
 
         int expected = 1;
 
-        int actual = testObject1.getUniqueId();
+        int actual = testObject1.getUniqueID();
 
         Assertions.assertEquals(expected, actual);
 
 
     }
+    @Test
+    public void checkGetUniqueIDtest2(){
+
+        int expected1 = 1;
+        int expected2 = 2;
+        int expected3 = 3;
+
+
+        int actual1 = testObject1.getUniqueID();
+        int actual2 = testObject2.getUniqueID();
+        int actual3 = testObject3.getUniqueID();
+
+        Assertions.assertEquals(expected1, actual1);
+        Assertions.assertEquals(expected2, actual2);
+        Assertions.assertEquals(expected3, actual3);
+    }
+
 
 
 
