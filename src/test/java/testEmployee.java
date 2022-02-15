@@ -129,6 +129,14 @@ public class testEmployee {
 
     }
 
+    @Test
+    public void checkGetSalaryTest(){
+
+        double expected = 30500.00;
+
+        double actual = testObject1.getSalary();
+    }
+
 
 
 
