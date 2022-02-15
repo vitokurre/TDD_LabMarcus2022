@@ -48,7 +48,7 @@ public class Employee {
         return salary;
     }
 
-    public void setSalary(double expected) {
-        salary = expected;
+    public void setSalary(double newSalary) {
+        salary = newSalary;
     }
 }
