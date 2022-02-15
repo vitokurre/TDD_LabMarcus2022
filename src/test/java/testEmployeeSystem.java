@@ -30,7 +30,6 @@ public class testEmployeeSystem {
         testObjectSystem = new EmployeeSystem();
 
 
-
     }
 
     @Test
@@ -48,12 +47,14 @@ public class testEmployeeSystem {
     }
 
     @Test
-    public void checkAddEmployeeTest(){
+    public void checkAddEmployeeTest() {
 
         int expected = 3;
         ArrayList<Employee> employeesTest = new ArrayList<Employee>();
 
         testObjectSystem.addEmployee();
+
+
     }
 
 }
