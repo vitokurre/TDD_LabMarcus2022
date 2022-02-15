@@ -23,6 +23,17 @@ public class testEmployee {
         testObject1 = new Employee("Marcus", "Davidsson", 33, 30500.00);
 
     }
+    @Test
+    public void checkGetUniqueIDtest(){
+
+        int expected = 1;
+
+        int actual = testObject1.getUniqueId();
+
+
+
+
+    }
 
 
 
