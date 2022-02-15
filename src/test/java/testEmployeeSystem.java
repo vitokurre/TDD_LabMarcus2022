@@ -36,12 +36,14 @@ public class testEmployeeSystem {
     @Test
     public void checkGetEmployeeListTest() {
 
-        int expected = 3;
+        int expected = 0;
         ArrayList<Employee> employeesTest = new ArrayList<Employee>();
 
         employeesTest = testObjectSystem.GetEmployeeList();
 
+        int actual = employeesTest.size();
 
+        Assertions.assertEquals(expected, actual);
 
     }
 }
