@@ -38,7 +38,7 @@ public class Employee {
         return age;
     }
 
-    public void setAge(int i) {
-        age = i;
+    public void setAge(int newAge) {
+        age = newAge;
     }
 }
