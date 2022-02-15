@@ -52,7 +52,9 @@ public class testEmployeeSystem {
         int expected = 3;
         ArrayList<Employee> employeesTest = new ArrayList<Employee>();
 
-        testObjectSystem.addEmployee();
+        testObjectSystem.addEmployee(testObject1);
+
+
 
 
     }
