@@ -63,6 +63,10 @@ public class testEmployeeSystem {
 
         employeesTest = testObjectSystem.GetEmployeeList();
 
+        int actual = employeesTest.size();
+
+        Assertions.assertEquals(expected, actual);
+
 
 
 
