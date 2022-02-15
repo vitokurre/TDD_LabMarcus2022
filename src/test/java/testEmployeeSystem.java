@@ -46,4 +46,14 @@ public class testEmployeeSystem {
         Assertions.assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void checkAddEmployeeTest(){
+
+        int expected = 3;
+        ArrayList<Employee> employeesTest = new ArrayList<Employee>();
+
+        testObjectSystem.addEmployee();
+    }
+
 }
