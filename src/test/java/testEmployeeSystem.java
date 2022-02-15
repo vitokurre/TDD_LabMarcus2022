@@ -57,9 +57,13 @@ public class testEmployeeSystem {
         int expected = 3;
         ArrayList<Employee> employeesTest = new ArrayList<Employee>();
 
-        testObjectSystem.addEmployee(testObject1, testObject2, testObject3);
+        testObjectSystem.addEmployee(testObject1);
+        testObjectSystem.addEmployee(testObject2);
+        testObjectSystem.addEmployee(testObject3);
 
         employeesTest = testObjectSystem.GetEmployeeList();
+
+
 
 
     }
