@@ -112,7 +112,7 @@ public class testEmployee {
 
         int actual = testObject1.getAge();
 
-
+        Assertions.assertEquals(expected, actual);
 
     }
 
