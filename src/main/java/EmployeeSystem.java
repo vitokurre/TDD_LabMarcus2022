@@ -9,7 +9,7 @@ public class EmployeeSystem {
         return employees;
     }
 
-    public void addEmployee() {
+    public void addEmployee(Employee testObject1) {
 
     }
 }
