@@ -116,6 +116,14 @@ public class testEmployee {
 
     }
 
+    @Test
+    public void checkSetAgeTest(){
+
+        int expected = 45;
+
+        testObject1.setAge(45);
+    }
+
 
 
 
