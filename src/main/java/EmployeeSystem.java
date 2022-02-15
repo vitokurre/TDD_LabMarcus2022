@@ -13,7 +13,8 @@ public class EmployeeSystem {
         employees.add(testObject);
     }
 
-    public void removeEmployee(Employee testObject2) {
+    public void removeEmployee(Employee testObject) {
+
     }
 }
 
