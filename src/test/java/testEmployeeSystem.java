@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.*;
 
+import java.util.ArrayList;
+
 public class testEmployeeSystem {
     Employee testObject1;
     EmployeeSystem testObjectSystem;
@@ -27,14 +29,17 @@ public class testEmployeeSystem {
         testObject1 = new Employee("Marcus", "Davidsson", 33, 30500.00);
         testObjectSystem = new EmployeeSystem();
 
+
+
     }
 
     @Test
     public void checkGetEmployeeListTest() {
 
         int expected = 3;
+        ArrayList<Employee> employeesTest = new ArrayList<Employee>();
 
-        int actual = testObjectSystem.GetEmployeeList();
+        employeesTest = testObjectSystem.GetEmployeeList();
 
     }
 }
