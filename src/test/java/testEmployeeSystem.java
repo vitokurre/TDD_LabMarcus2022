@@ -82,6 +82,13 @@ public class testEmployeeSystem {
         testObjectSystem.addEmployee(testObject3);
 
         testObjectSystem.removeEmployee(testObject2);
+
+        employeesTest = testObjectSystem.GetEmployeeList();
+
+        int actual = employeesTest.size();
+
+        Assertions.assertEquals(expected, actual);
+
     }
 
 }
