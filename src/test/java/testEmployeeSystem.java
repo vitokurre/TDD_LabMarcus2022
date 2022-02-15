@@ -25,6 +25,7 @@ public class testEmployeeSystem {
         System.out.println("Test start");
 
         testObject1 = new Employee("Marcus", "Davidsson", 33, 30500.00);
+        testObjectSystem = new EmployeeSystem();
 
     }
 
@@ -33,6 +34,7 @@ public class testEmployeeSystem {
 
         int expected = 3;
 
+        int actual = testObjectSystem.GetEmployeeList();
 
     }
 }
