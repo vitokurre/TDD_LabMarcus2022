@@ -4,12 +4,14 @@ public class Employee {
     private static int counter;
     private String firstName;
     private String lastName;
+    private int age;
 
     public Employee(String firstName, String lastName, int age, double salary){
         counter = counter + 1;
         ID = counter;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.age = age;
     }
 
     public int getUniqueID() {
@@ -30,5 +32,9 @@ public class Employee {
 
     public void setLastName(String newLastname) {
         lastName = newLastname;
+    }
+
+    public int getAge(){
+        return age;
     }
 }
