@@ -139,6 +139,14 @@ public class testEmployee {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void checkSetSalaryTest(){
+
+        double expected = 60500.50;
+
+        testObject1.setSalary(expected);
+    }
+
 
 
 
