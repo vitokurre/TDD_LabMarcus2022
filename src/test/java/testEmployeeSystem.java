@@ -81,7 +81,7 @@ public class testEmployeeSystem {
         testObjectSystem.addEmployee(testObject2);
         testObjectSystem.addEmployee(testObject3);
 
-        testObjectSystem.removeEmployee();
+        testObjectSystem.removeEmployee(testObject2);
     }
 
 }
