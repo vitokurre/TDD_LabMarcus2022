@@ -71,7 +71,7 @@ public class testEmployeeSystem {
     }
 
     @Test
-    public void checkRemoveEmployeeTest(){
+    public void checkRemoveEmployeeTest() {
 
         int expected = 2;
 
