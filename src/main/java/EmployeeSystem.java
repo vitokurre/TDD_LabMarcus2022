@@ -8,5 +8,9 @@ public class EmployeeSystem {
     public ArrayList<Employee> GetEmployeeList() {
         return employees;
     }
+
+    public void addEmployee() {
+
+    }
 }
 
