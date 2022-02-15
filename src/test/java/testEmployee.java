@@ -94,5 +94,14 @@ public class testEmployee {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void checkSetLastNameTest(){
+        String expected = "Bengtsson";
+
+        testObject1.setLastName(expected);
+    }
+
+
+
 
 }
