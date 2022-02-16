@@ -25,13 +25,13 @@ public class EmployeeSystem {
         int ID = objectID;
         double salary = 0;
 
-        for(int i = 0; i < employees.size();i++){
-            if (employees.get(i).getUniqueID() == objectID ){
+        for (int i = 0; i < employees.size(); i++) {
+            if (employees.get(i).getUniqueID() == objectID) {
                 salary = employees.get(i).getSalary();
             }
         }
 
-        return salary; 
+        return salary;
 
     }
 
@@ -42,15 +42,15 @@ public class EmployeeSystem {
 
         double salary = getEmployeeSalary(ID);
 
-        if((percent >= 1) && (percent <= 2)){
+        if ((percent >= 1) && (percent <= 2)) {
             salary = salary * percent;
 
         }
-        if ((percent < 1) && (percent > 2)){
+        if ((percent < 1) && (percent > 2)) {
 
-             System.out.println("Can't lower a salary or give a raise above 100%. Please try again");
+            System.out.println("Can't lower a salary or give a raise above 100%. Please try again");
         }
-        return  salary;
+        return salary;
     }
 }
 
