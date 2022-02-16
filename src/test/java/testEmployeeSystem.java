@@ -29,8 +29,8 @@ public class testEmployeeSystem {
         System.out.println("Test start");
 
         testObject1 = new Employee("Marcus", "Davidsson", 33, 30500.00);
-        testObject2 = new Employee("Jakob", "Nilsson", 23, 30500.00);
-        testObject3 = new Employee("Anki", "Phan", 24, 30500.00);
+        testObject2 = new Employee("Jakob", "Nilsson", 23, 30000.00);
+        testObject3 = new Employee("Anki", "Phan", 24, 40000.00);
 
         testObjectSystem = new EmployeeSystem();
 
@@ -143,5 +143,27 @@ public class testEmployeeSystem {
         double actual = testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByPercent);
 
         Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void checkRaiseAllEmployeeSalaryTest(){
+
+        double raiseSalaryByPercent = 1.02;
+        double actual = 30500.00;
+
+        testObjectSystem.addEmployee(testObject1);
+        testObjectSystem.addEmployee(testObject2);
+        testObjectSystem.addEmployee(testObject3);
+
+        int ID1 = testObject1.getUniqueID();
+        int ID2 = testObject2.getUniqueID();
+        int ID3 = testObject3.getUniqueID();
+
+        double expected1 = testObjectSystem.getEmployeeSalary(ID1);
+        double expected2 = testObjectSystem.getEmployeeSalary(ID2);
+        double expected3 = testObjectSystem.getEmployeeSalary(ID3);
+
+        testObjectSystem.raiseAllEmployeesSalary(raiseSalaryByPercent);
+
     }
 }
