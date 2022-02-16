@@ -19,7 +19,6 @@ public class EmployeeSystem {
         employees.remove(testObject);
     }
 
-
     public double getEmployeeSalary(int objectID) {
 
         int ID = objectID;
@@ -32,7 +31,6 @@ public class EmployeeSystem {
         }
 
         return salary;
-
     }
 
     public void raiseEmployeeSalary(int ID, double raiseSalaryByPercent) { //gör om till void, kalla på getSalary i testet
@@ -51,7 +49,6 @@ public class EmployeeSystem {
                     employees.get(i).setSalary(salary);
                 }
             }
-
 
         }
         if ((percent <= 1) || (percent > 2)) {

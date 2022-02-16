@@ -92,7 +92,7 @@ public class testEmployeeSystem {
     }
 
     @Test
-    public void checkGetEmployeeSalaryTest(){
+    public void checkGetEmployeeSalaryTest() {
 
         double actual = 30500.00;
 
@@ -102,11 +102,11 @@ public class testEmployeeSystem {
 
         double expected = testObjectSystem.getEmployeeSalary(ID);
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void checkRaiseEmployeeSalaryTest(){
+    public void checkRaiseEmployeeSalaryTest() {
 
         double raiseSalaryByPercent = 1.02;
         double expected = 30500.00 * raiseSalaryByPercent;
@@ -120,8 +120,9 @@ public class testEmployeeSystem {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void checkRaiseEmployeeSalaryTest2(){
+    public void checkRaiseEmployeeSalaryTest2() {
 
         double raiseSalaryByPercent = 1;
         double expected = 30500.00;
@@ -135,8 +136,9 @@ public class testEmployeeSystem {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void checkRaiseEmployeeSalaryTest3(){
+    public void checkRaiseEmployeeSalaryTest3() {
 
         double raiseSalaryByPercent = 2.01;
         double expected = 30500.00;
@@ -152,7 +154,7 @@ public class testEmployeeSystem {
     }
 
     @Test
-    public void checkRaiseAllEmployeeSalaryTest(){
+    public void checkRaiseAllEmployeeSalaryTest() {
 
         double raiseSalaryByPercent = 1.02;
         double expected1 = 30500.00 * raiseSalaryByPercent;
@@ -173,6 +175,9 @@ public class testEmployeeSystem {
 
         testObjectSystem.raiseAllEmployeesSalary(raiseSalaryByPercent);
 
+        Assertions.assertEquals(expected1, actual1);
+        Assertions.assertEquals(expected2, actual2);
+        Assertions.assertEquals(expected3, actual3);
 
 
     }
