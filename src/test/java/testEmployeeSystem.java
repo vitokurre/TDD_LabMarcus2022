@@ -98,6 +98,8 @@ public class testEmployeeSystem {
 
         testObjectSystem.addEmployee(testObject1);
 
-        double expected = testObjectSystem.getEmployeeSalary(testObject1.getSalary());
+        int ID = testObject1.getUniqueID();
+
+        double expected = testObjectSystem.getEmployeeSalary(ID);
     }
 }

@@ -1,3 +1,5 @@
+import jdk.nashorn.internal.objects.annotations.Where;
+
 import java.util.ArrayList;
 
 public class EmployeeSystem {
@@ -15,6 +17,22 @@ public class EmployeeSystem {
 
     public void removeEmployee(Employee testObject) {
         employees.remove(testObject);
+    }
+
+
+    public double getEmployeeSalary(int objectID) {
+
+        int ID = objectID;
+        double salary = 0;
+
+        for(int i = 0; i < employees.size();i++){
+            if (employees.get(i).getUniqueID() == objectID ){
+                salary = employees.get(i).getSalary();
+            }
+        }
+
+        return salary; 
+
     }
 }
 
