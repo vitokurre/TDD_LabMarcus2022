@@ -104,4 +104,18 @@ public class testEmployeeSystem {
 
         Assertions.assertEquals(expected,actual);
     }
+
+    @Test
+    public void checkRaiseEmployeeSalaryTest(){
+
+        double raiseSalaryByProcent = 1.02;
+        double expected = 30500.00 * raiseSalaryByProcent;
+
+        testObjectSystem.addEmployee(testObject1);
+        int ID = testObject1.getUniqueID();
+
+        double actual = testObjectSystem.raiseEmployeeSalary(ID);
+
+
+    }
 }
