@@ -169,16 +169,69 @@ public class testEmployeeSystem {
         testObjectSystem.addEmployee(testObject2);
         testObjectSystem.addEmployee(testObject3);
 
+        testObjectSystem.raiseAllEmployeesSalary(raiseSalaryByPercent);
+
         double actual1 = testObjectSystem.getEmployeeSalary(ID1);
         double actual2 = testObjectSystem.getEmployeeSalary(ID2);
         double actual3 = testObjectSystem.getEmployeeSalary(ID3);
 
-        testObjectSystem.raiseAllEmployeesSalary(raiseSalaryByPercent);
-
-       // Assertions.assertEquals(expected1, actual1);
+        Assertions.assertEquals(expected1, actual1);
         Assertions.assertEquals(expected2, actual2);
         Assertions.assertEquals(expected3, actual3);
 
+    }
+    @Test
+    public void checkRaiseAllEmployeeSalaryTest2() {
+
+        double raiseSalaryByPercent = 1;
+        double expected1 = 30500.00;
+        double expected2 = 30000.00;
+        double expected3 = 40000.00;
+
+        int ID1 = testObject1.getUniqueID();
+        int ID2 = testObject2.getUniqueID();
+        int ID3 = testObject3.getUniqueID();
+
+        testObjectSystem.addEmployee(testObject1);
+        testObjectSystem.addEmployee(testObject2);
+        testObjectSystem.addEmployee(testObject3);
+
+        testObjectSystem.raiseAllEmployeesSalary(raiseSalaryByPercent);
+
+        double actual1 = testObjectSystem.getEmployeeSalary(ID1);
+        double actual2 = testObjectSystem.getEmployeeSalary(ID2);
+        double actual3 = testObjectSystem.getEmployeeSalary(ID3);
+
+        Assertions.assertEquals(expected1, actual1);
+        Assertions.assertEquals(expected2, actual2);
+        Assertions.assertEquals(expected3, actual3);
+
+    }
+    @Test
+    public void checkRaiseAllEmployeeSalaryTest3() {
+
+        double raiseSalaryByPercent = 2.01;
+        double expected1 = 30500.00;
+        double expected2 = 30000.00;
+        double expected3 = 40000.00;
+
+        int ID1 = testObject1.getUniqueID();
+        int ID2 = testObject2.getUniqueID();
+        int ID3 = testObject3.getUniqueID();
+
+        testObjectSystem.addEmployee(testObject1);
+        testObjectSystem.addEmployee(testObject2);
+        testObjectSystem.addEmployee(testObject3);
+
+        testObjectSystem.raiseAllEmployeesSalary(raiseSalaryByPercent);
+
+        double actual1 = testObjectSystem.getEmployeeSalary(ID1);
+        double actual2 = testObjectSystem.getEmployeeSalary(ID2);
+        double actual3 = testObjectSystem.getEmployeeSalary(ID3);
+
+        Assertions.assertEquals(expected1, actual1);
+        Assertions.assertEquals(expected2, actual2);
+        Assertions.assertEquals(expected3, actual3);
 
     }
 }
