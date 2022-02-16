@@ -64,6 +64,7 @@ public class EmployeeSystem {
     public void raiseAllEmployeesSalary(double raiseSalaryByPercent) {
 
         double raisaPercent = raiseSalaryByPercent;
+        int ID;
         double salary;
 
         if ((raisaPercent > 1) && (raisaPercent <= 2)) {
@@ -71,8 +72,10 @@ public class EmployeeSystem {
 
             for (int i = 0; i < employees.size(); i++) {
 
-                salary = employees.get(i).getSalary();
-                salary = salary * raisaPercent;
+                ID = employees.get(i).getUniqueID();
+
+                employees.get(i).setSalary();
+
 
                 //här måste jag kunna SPARA en anställds lön, inte bara returnera den.
 

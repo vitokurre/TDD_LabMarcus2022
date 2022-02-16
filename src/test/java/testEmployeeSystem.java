@@ -159,11 +159,21 @@ public class testEmployeeSystem {
         double expected2 = 30000.00 * raiseSalaryByPercent;
         double expected3 = 40000.00 * raiseSalaryByPercent;
 
+        int ID1 = testObject1.getUniqueID();
+        int ID2 = testObject2.getUniqueID();
+        int ID3 = testObject3.getUniqueID();
+
         testObjectSystem.addEmployee(testObject1);
         testObjectSystem.addEmployee(testObject2);
         testObjectSystem.addEmployee(testObject3);
 
+        double actual1 = testObjectSystem.getEmployeeSalary(ID1);
+        double actual2 = testObjectSystem.getEmployeeSalary(ID2);
+        double actual3 = testObjectSystem.getEmployeeSalary(ID3);
+
         testObjectSystem.raiseAllEmployeesSalary(raiseSalaryByPercent);
+
+
 
     }
 }
