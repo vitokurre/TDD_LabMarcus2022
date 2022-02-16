@@ -35,7 +35,7 @@ public class EmployeeSystem {
 
     }
 
-    public double raiseEmployeeSalary(int ID, double raiseSalaryByPercent) {
+    public double raiseEmployeeSalary(int ID, double raiseSalaryByPercent) { //gör om till void, kalla på getSalary i testet
 
         int employeeID = ID;
         double percent = raiseSalaryByPercent;
@@ -45,12 +45,20 @@ public class EmployeeSystem {
         if ((percent > 1) && (percent <= 2)) {
             salary = salary * percent;
 
+
+            for (int i = 0; i < employees.size(); i++) {
+                if (employees.get(i).getUniqueID() == ID) {
+                    salary = employees.get(i).getSalary();  //här vill jag spara den nya lönen.
+                }
+            }
+
+
         }
         if ((percent <= 1) || (percent > 2)) {
 
             System.out.println("Can't lower a salary or give a raise above 100%. Please try again");
         }
-        return salary; // hur vet jag att metoden sparar en anställds lön?
+        //return salary; // hur vet jag att metoden sparar en anställds lön?
     }
 
     public void raiseAllEmployeesSalary(double raiseSalaryByPercent) {

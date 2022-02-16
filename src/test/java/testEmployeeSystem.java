@@ -114,7 +114,9 @@ public class testEmployeeSystem {
         testObjectSystem.addEmployee(testObject1);
         int ID = testObject1.getUniqueID();
 
-        double actual = testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByPercent);
+        testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByPercent);
+
+        double actual = testObjectSystem.getEmployeeSalary(ID);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -127,7 +129,9 @@ public class testEmployeeSystem {
         testObjectSystem.addEmployee(testObject1);
         int ID = testObject1.getUniqueID();
 
-        double actual = testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByPercent);
+        testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByPercent);
+
+        double actual = testObjectSystem.getEmployeeSalary(ID);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -140,7 +144,9 @@ public class testEmployeeSystem {
         testObjectSystem.addEmployee(testObject1);
         int ID = testObject1.getUniqueID();
 
-        double actual = testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByPercent);
+        testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByPercent);
+
+        double actual = testObjectSystem.getEmployeeSalary(ID);
 
         Assertions.assertEquals(expected, actual);
     }
