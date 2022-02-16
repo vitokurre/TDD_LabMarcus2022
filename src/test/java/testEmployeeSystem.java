@@ -121,7 +121,7 @@ public class testEmployeeSystem {
     @Test
     public void checkRaiseEmployeeSalaryTest2(){
 
-        double raiseSalaryByPercent = 0.02;
+        double raiseSalaryByPercent = 0.99;
         double expected = 30500.00;
 
         testObjectSystem.addEmployee(testObject1);
@@ -134,7 +134,7 @@ public class testEmployeeSystem {
     @Test
     public void checkRaiseEmployeeSalaryTest3(){
 
-        double raiseSalaryByPercent = 2.02;
+        double raiseSalaryByPercent = 2.01;
         double expected = 30500.00;
 
         testObjectSystem.addEmployee(testObject1);
