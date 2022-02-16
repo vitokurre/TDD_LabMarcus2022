@@ -62,19 +62,15 @@ public class EmployeeSystem {
         double raisePercent = raiseSalaryByPercent;
         int ID;
 
-        if ((raisePercent > 1) && (raisePercent <= 2)) {
 
-            for (int i = 0; i < employees.size(); i++) {
+        for (int i = 0; i < employees.size(); i++) {
 
-                ID = employees.get(i).getUniqueID();
-                raiseEmployeeSalary(ID, raisePercent);
+            ID = employees.get(i).getUniqueID();
+            raiseEmployeeSalary(ID, raisePercent);
 
-            }
-            if ((raisePercent <= 1) || (raisePercent > 2)) {
-
-                System.out.println("Can't lower a salary or give a raise above 100%. Please try again");
-            }
         }
+
+
     }
 }
 
