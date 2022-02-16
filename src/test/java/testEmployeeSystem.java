@@ -114,7 +114,7 @@ public class testEmployeeSystem {
         testObjectSystem.addEmployee(testObject1);
         int ID = testObject1.getUniqueID();
 
-        double actual = testObjectSystem.raiseEmployeeSalary(ID);
+        double actual = testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByProcent);
 
 
     }

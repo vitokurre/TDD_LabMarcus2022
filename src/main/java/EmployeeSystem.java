@@ -34,5 +34,17 @@ public class EmployeeSystem {
         return salary; 
 
     }
+
+    public double raiseEmployeeSalary(int ID, double raiseSalaryByProcent) {
+
+        int employeeID = ID;
+        double percent = raiseSalaryByProcent;
+
+        double salary = getEmployeeSalary(ID);
+
+        salary = salary * percent;
+
+        return  salary;
+    }
 }
 
