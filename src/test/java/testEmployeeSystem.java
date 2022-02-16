@@ -94,12 +94,14 @@ public class testEmployeeSystem {
     @Test
     public void checkGetEmployeeSalary(){
 
-        double actual = 30500.780;
+        double actual = 30500.00;
 
         testObjectSystem.addEmployee(testObject1);
 
         int ID = testObject1.getUniqueID();
 
         double expected = testObjectSystem.getEmployeeSalary(ID);
+
+        Assertions.assertEquals(expected,actual);
     }
 }
