@@ -92,7 +92,7 @@ public class testEmployeeSystem {
     }
 
     @Test
-    public void checkGetEmployeeSalary(){
+    public void checkGetEmployeeSalaryTest(){
 
         double actual = 30500.00;
 
@@ -108,13 +108,13 @@ public class testEmployeeSystem {
     @Test
     public void checkRaiseEmployeeSalaryTest(){
 
-        double raiseSalaryByProcent = 1.02;
-        double expected = 30500.00 * raiseSalaryByProcent;
+        double raiseSalaryByPercent = 1.02;
+        double expected = 30500.00 * raiseSalaryByPercent;
 
         testObjectSystem.addEmployee(testObject1);
         int ID = testObject1.getUniqueID();
 
-        double actual = testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByProcent);
+        double actual = testObjectSystem.raiseEmployeeSalary(ID, raiseSalaryByPercent);
 
 
     }

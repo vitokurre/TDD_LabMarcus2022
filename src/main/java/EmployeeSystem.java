@@ -35,10 +35,10 @@ public class EmployeeSystem {
 
     }
 
-    public double raiseEmployeeSalary(int ID, double raiseSalaryByProcent) {
+    public double raiseEmployeeSalary(int ID, double raiseSalaryByPercent) {
 
         int employeeID = ID;
-        double percent = raiseSalaryByProcent;
+        double percent = raiseSalaryByPercent;
 
         double salary = getEmployeeSalary(ID);
 
