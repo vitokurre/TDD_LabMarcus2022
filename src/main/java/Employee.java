@@ -7,7 +7,7 @@ public class Employee {
     private int age;
     private double salary;
 
-    public Employee(String firstName, String lastName, int age, double salary){
+    public Employee(String firstName, String lastName, int age, double salary) {
         counter = counter + 1;
         ID = counter;
         this.firstName = firstName;
@@ -36,7 +36,7 @@ public class Employee {
         lastName = newLastname;
     }
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 

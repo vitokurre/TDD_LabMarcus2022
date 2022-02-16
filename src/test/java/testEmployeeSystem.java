@@ -180,6 +180,7 @@ public class testEmployeeSystem {
         Assertions.assertEquals(expected3, actual3);
 
     }
+
     @Test
     public void checkRaiseAllEmployeeSalaryTest2() {
 
@@ -207,6 +208,7 @@ public class testEmployeeSystem {
         Assertions.assertEquals(expected3, actual3);
 
     }
+
     @Test
     public void checkRaiseAllEmployeeSalaryTest3() {
 
@@ -232,7 +234,6 @@ public class testEmployeeSystem {
         Assertions.assertEquals(expected1, actual1);
         Assertions.assertEquals(expected2, actual2);
         Assertions.assertEquals(expected3, actual3);
-
 
     }
 }

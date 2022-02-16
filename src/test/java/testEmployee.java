@@ -38,8 +38,8 @@ public class testEmployee {
 
         int actual2 = testObject2.getUniqueID();
 
-        int expected1 = actual2-1;
-        int expected3 = actual2+1;
+        int expected1 = actual2 - 1;
+        int expected3 = actual2 + 1;
 
 
         int actual1 = testObject1.getUniqueID();
@@ -61,7 +61,7 @@ public class testEmployee {
     }
 
     @Test
-    public void checkSetFirstNameTest(){
+    public void checkSetFirstNameTest() {
 
         String expected = "Bengt";
 
@@ -74,7 +74,7 @@ public class testEmployee {
     }
 
     @Test
-    public void checkGetLastNameTest(){
+    public void checkGetLastNameTest() {
         String expected = "Davidsson";
 
         String actual = testObject1.getLastName();
@@ -83,7 +83,7 @@ public class testEmployee {
     }
 
     @Test
-    public void checkSetLastNameTest(){
+    public void checkSetLastNameTest() {
         String expected = "Bengtsson";
 
         testObject1.setLastName(expected);
@@ -94,7 +94,7 @@ public class testEmployee {
     }
 
     @Test
-    public void checkGetAgeTest(){
+    public void checkGetAgeTest() {
 
         int expected = 33;
 
@@ -105,7 +105,7 @@ public class testEmployee {
     }
 
     @Test
-    public void checkSetAgeTest(){
+    public void checkSetAgeTest() {
 
         int expected = 45;
 
@@ -118,7 +118,7 @@ public class testEmployee {
     }
 
     @Test
-    public void checkGetSalaryTest(){
+    public void checkGetSalaryTest() {
 
         double expected = 30500.00;
 
@@ -128,7 +128,7 @@ public class testEmployee {
     }
 
     @Test
-    public void checkSetSalaryTest(){
+    public void checkSetSalaryTest() {
 
         double expected = 60500.50;
 
@@ -136,11 +136,9 @@ public class testEmployee {
 
         double actual = testObject1.getSalary();
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
 
     }
-
-
 
 
 }
