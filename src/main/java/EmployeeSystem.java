@@ -35,7 +35,7 @@ public class EmployeeSystem {
 
     }
 
-    public double raiseEmployeeSalary(int ID, double raiseSalaryByPercent) { //gör om till void, kalla på getSalary i testet
+    public void raiseEmployeeSalary(int ID, double raiseSalaryByPercent) { //gör om till void, kalla på getSalary i testet
 
         int employeeID = ID;
         double percent = raiseSalaryByPercent;
@@ -48,7 +48,7 @@ public class EmployeeSystem {
 
             for (int i = 0; i < employees.size(); i++) {
                 if (employees.get(i).getUniqueID() == ID) {
-                    salary = employees.get(i).getSalary();  //här vill jag spara den nya lönen.
+                    employees.get(i).setSalary(salary);
                 }
             }
 
