@@ -50,7 +50,30 @@ public class EmployeeSystem {
 
             System.out.println("Can't lower a salary or give a raise above 100%. Please try again");
         }
-        return salary;
+        return salary; // hur vet jag att metoden sparar en anställds lön?
+    }
+
+    public void raiseAllEmployeesSalary(double raiseSalaryByPercent) {
+
+        double raisaPercent = raiseSalaryByPercent;
+        double salary;
+
+        if ((raisaPercent > 1) && (raisaPercent <= 2)) {
+            //salary = salary * raisaPercent;
+
+            for (int i = 0; i < employees.size(); i++) {
+
+                salary = employees.get(i).getSalary();
+                salary = salary * raisaPercent;
+
+                //här måste jag kunna SPARA en anställds lön, inte bara returnera den.
+
+            }
+            if ((raisaPercent <= 1) || (raisaPercent > 2)) {
+
+                System.out.println("Can't lower a salary or give a raise above 100%. Please try again");
+            }
+        }
     }
 }
 

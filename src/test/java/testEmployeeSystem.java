@@ -149,19 +149,13 @@ public class testEmployeeSystem {
     public void checkRaiseAllEmployeeSalaryTest(){
 
         double raiseSalaryByPercent = 1.02;
-        double actual = 30500.00;
+        double expected1 = 30500.00 * raiseSalaryByPercent;
+        double expected2 = 30000.00 * raiseSalaryByPercent;
+        double expected3 = 40000.00 * raiseSalaryByPercent;
 
         testObjectSystem.addEmployee(testObject1);
         testObjectSystem.addEmployee(testObject2);
         testObjectSystem.addEmployee(testObject3);
-
-        int ID1 = testObject1.getUniqueID();
-        int ID2 = testObject2.getUniqueID();
-        int ID3 = testObject3.getUniqueID();
-
-        double expected1 = testObjectSystem.getEmployeeSalary(ID1);
-        double expected2 = testObjectSystem.getEmployeeSalary(ID2);
-        double expected3 = testObjectSystem.getEmployeeSalary(ID3);
 
         testObjectSystem.raiseAllEmployeesSalary(raiseSalaryByPercent);
 
