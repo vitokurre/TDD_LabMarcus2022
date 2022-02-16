@@ -94,7 +94,7 @@ public class testEmployeeSystem {
     @Test
     public void checkGetEmployeeSalary(){
 
-        double actual = 30500.00;
+        double actual = 30500.780;
 
         testObjectSystem.addEmployee(testObject1);
 
